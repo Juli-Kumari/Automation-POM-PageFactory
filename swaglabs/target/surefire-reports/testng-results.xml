@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="EdgeSuite" duration-ms="175848" started-at="2023-08-12T14:36:10 IST" finished-at="2023-08-12T14:39:06 IST">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.psl.runner.MenuTestRunner@29b5cd00]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="EdgeTest" duration-ms="175848" started-at="2023-08-12T14:36:10 IST" finished-at="2023-08-12T14:39:06 IST">
+      <class name="com.psl.runner.MenuTestRunner">
+        <test-method status="PASS" signature="beforeSuite(java.lang.String)[pri:0, instance:com.psl.runner.MenuTestRunner@29b5cd00]" name="beforeSuite" is-config="true" duration-ms="31" started-at="2023-08-12T14:36:10 IST" finished-at="2023-08-12T14:36:10 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.psl.runner.MenuTestRunner@29b5cd00]" name="setUpClass" is-config="true" duration-ms="1740" started-at="2023-08-12T14:36:10 IST" finished-at="2023-08-12T14:36:12 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@12abcd1e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.psl.runner.MenuTestRunner@29b5cd00]" name="runScenario" duration-ms="24237" started-at="2023-08-12T14:36:12 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-12T14:36:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is able to open the menu tab"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check the Menu Bar Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.psl.runner.MenuTestRunner@29b5cd00]" name="runScenario" duration-ms="119648" started-at="2023-08-12T14:36:36 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-12T14:38:36 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User is able to see the About tab information"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check the Menu Bar Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.psl.runner.MenuTestRunner@29b5cd00]" name="runScenario" duration-ms="20489" started-at="2023-08-12T14:38:36 IST" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-12T14:38:56 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User should logout successfully and redirect to the login page again"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[Check the Menu Bar Functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.psl.runner.MenuTestRunner@29b5cd00]" name="tearDownClass" is-config="true" duration-ms="9683" started-at="2023-08-12T14:38:56 IST" finished-at="2023-08-12T14:39:06 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.psl.runner.MenuTestRunner -->
+    </test> <!-- EdgeTest -->
+  </suite> <!-- EdgeSuite -->
+</testng-results>

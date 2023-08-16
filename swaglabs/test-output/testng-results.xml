@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-13T09:39:26 IST" name="ChromeSuite" finished-at="2023-08-13T09:44:00 IST" duration-ms="274487">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.psl.runner.TestRunner@66f57048]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-08-13T09:39:26 IST" name="ChromeTest" finished-at="2023-08-13T09:44:00 IST" duration-ms="274487">
+      <class name="com.psl.runner.TestRunner">
+        <test-method is-config="true" signature="beforeSuite(java.lang.String)[pri:0, instance:com.psl.runner.TestRunner@66f57048]" started-at="2023-08-13T09:39:26 IST" name="beforeSuite" finished-at="2023-08-13T09:39:26 IST" duration-ms="17" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:com.psl.runner.TestRunner@66f57048]" started-at="2023-08-13T09:39:26 IST" name="setUpClass" finished-at="2023-08-13T09:39:27 IST" duration-ms="879" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@52bc6fcf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.psl.runner.TestRunner@66f57048]" started-at="2023-08-13T09:39:27 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-13T09:40:33 IST" duration-ms="65888" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Pricing Page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[About page functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.psl.runner.TestRunner@66f57048]" started-at="2023-08-13T09:40:33 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-13T09:41:25 IST" duration-ms="52819" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Sign In button is Enable on pricing page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[About page functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.psl.runner.TestRunner@66f57048]" started-at="2023-08-13T09:41:25 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-13T09:43:05 IST" duration-ms="99453" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify the Search functionality on pricing page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[About page functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:com.psl.runner.TestRunner@66f57048]" started-at="2023-08-13T09:43:05 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-13T09:43:49 IST" duration-ms="43754" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["User able to close the serach page on pricing page"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[About page functionality]"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:com.psl.runner.TestRunner@66f57048]" started-at="2023-08-13T09:43:49 IST" name="tearDownClass" finished-at="2023-08-13T09:44:00 IST" duration-ms="11646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- com.psl.runner.TestRunner -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- ChromeSuite -->
+</testng-results>

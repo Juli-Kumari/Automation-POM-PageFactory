@@ -1,0 +1,249 @@
+<html>
+<head>
+<title>TestNG:  ChromeTest</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>ChromeTest</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>29/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Aug 12 11:50:15 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>773 seconds (773143 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Postal Code field takes only number", "Optional[Check the Checkout functionality]"</td>
+<td><div><pre>java.lang.AssertionError: The continue button is enable for the postal code contains string value:abcd expected [true] but found [false]
+	at com.psl.pages.CheckoutPage.userEnterStringValueInPostalCodeField(CheckoutPage.java:94)
+	at com.psl.stepdefinitions.CheckoutStepDef.user_not_able_to_see_the_continue_button_is_enable_with(CheckoutStepDef.java:78)
+	at ?.user not able to see the continue button is enable with &quot;abcd&quot;(file:///C:/Users/juli_kumari/Desktop/PIP/swaglabs/src/test/resources/Features/checkout.feature:65)
+... Removed 3 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace925385170", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace925385170'><pre>java.lang.AssertionError: The continue button is enable for the postal code contains string value:abcd expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at com.psl.pages.CheckoutPage.userEnterStringValueInPostalCodeField(CheckoutPage.java:94)
+	at com.psl.stepdefinitions.CheckoutStepDef.user_not_able_to_see_the_continue_button_is_enable_with(CheckoutStepDef.java:78)
+	at ?.user not able to see the continue button is enable with &quot;abcd&quot;(file:///C:/Users/juli_kumari/Desktop/PIP/swaglabs/src/test/resources/Features/checkout.feature:65)
+</pre></div></td>
+<td>17</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Pricing Page", "Optional[About page functionality]"</td>
+<td></td>
+<td>94</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Sign In button is Enable on pricing page", "Optional[About page functionality]"</td>
+<td></td>
+<td>75</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the Search functionality on pricing page", "Optional[About page functionality]"</td>
+<td></td>
+<td>63</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User able to close the serach page on pricing page", "Optional[About page functionality]"</td>
+<td></td>
+<td>80</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to Add single item to cart", "Optional[Check the Add To Cart functionality]"</td>
+<td></td>
+<td>11</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to Add multiple item to cart", "Optional[Check the Add To Cart functionality]"</td>
+<td></td>
+<td>12</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to remove the product from the cart page", "Optional[Check the Add To Cart functionality]"</td>
+<td></td>
+<td>13</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Continue Shopping button on Cart Page", "Optional[Check the Add To Cart functionality]"</td>
+<td></td>
+<td>13</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Checkout Informations should present and user able to enter the information", "Optional[Check the Checkout functionality]"</td>
+<td></td>
+<td>12</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Not Able to Complete the checkout process without entering the last name", "Optional[Check the Checkout functionality]"</td>
+<td></td>
+<td>16</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Not Able to Complete the checkout process without entering the first name", "Optional[Check the Checkout functionality]"</td>
+<td></td>
+<td>14</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User Not Able to Complete the checkout process without entering the postal code", "Optional[Check the Checkout functionality]"</td>
+<td></td>
+<td>17</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Complete the checkout process successfully with enter valid credential", "Optional[Check the Checkout functionality]"</td>
+<td></td>
+<td>15</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Total price value is displayed correctly", "Optional[Check the Checkout functionality]"</td>
+<td></td>
+<td>16</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the continue button present on the checkout-information page", "Optional[Check the Checkout functionality]"</td>
+<td></td>
+<td>15</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the cancle button present on the checkout-information page", "Optional[Check the Checkout functionality]"</td>
+<td></td>
+<td>15</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the cancle button present on the checkout-overview page", "Optional[Check the Checkout functionality]"</td>
+<td></td>
+<td>17</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Successful login with valid credential", "Optional[Login Functionality of Swag Labs]"</td>
+<td></td>
+<td>15</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Unsuccessful login with invalid credential", "Optional[Login Functionality of Swag Labs]"</td>
+<td></td>
+<td>9</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Unsuccessful login without entering username and password", "Optional[Login Functionality of Swag Labs]"</td>
+<td></td>
+<td>12</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Unsuccessful login with valid username and blank password field", "Optional[Login Functionality of Swag Labs]"</td>
+<td></td>
+<td>12</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to open the menu tab", "Optional[Check the Menu Bar Functionality]"</td>
+<td></td>
+<td>13</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User is able to see the About tab information", "Optional[Check the Menu Bar Functionality]"</td>
+<td></td>
+<td>30</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should logout successfully and redirect to the login page again", "Optional[Check the Menu Bar Functionality]"</td>
+<td></td>
+<td>13</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User should see the Products price in doller($) format", "Optional[Check the Products page functionality]"</td>
+<td></td>
+<td>11</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sort products by Name in descending order", "Optional[Check the Products page functionality]"</td>
+<td></td>
+<td>13</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sort products by Name in ascending order", "Optional[Check the Products page functionality]"</td>
+<td></td>
+<td>13</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sort products by Price (low to high) in ascending order", "Optional[Check the Products page functionality]"</td>
+<td></td>
+<td>12</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+<tr>
+<td title='com.psl.runner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: com.psl.runner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Sort products by price in descending order", "Optional[Check the Products page functionality]"</td>
+<td></td>
+<td>12</td>
+<td>com.psl.runner.TestRunner@29b5cd00</td></tr>
+</table><p>
+</body>
+</html>
